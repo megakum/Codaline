@@ -7,6 +7,7 @@ docs/*.txt
 
 # .idea
 .idea/*
-
+# .rej
+*.rej
 
 
