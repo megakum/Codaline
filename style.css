@@ -1,12 +1,12 @@
 /*Общий стиль*/
 body {
-        background-color: aliceblue;
-        font-size: 20px;
-        font-family: sans-serif;
+    background-color: aliceblue;
+    font-size: 20px;
+    font-family: sans-serif;
     }
 
 p {
-        text-indent: 30px;
+    text-indent: 30px;
 
     }
 ul {
@@ -19,15 +19,31 @@ ul li {
 a {
     text-decoration: none;
 }
-
+th, td {
+    border: 1px solid #aaaaaa;
+    padding: 5px 10px;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+thead {
+    background: #dddddd;
+    border: 5px solid #aaaaaa;
+}
+tfoot {
+    background: #ffda9e;
+    border: 5px solid #aaaaaa;
+}
 
 .left {
-            float: left;
-            margin: 25px 20px 10px 20px;
+    float: left;
+    margin: 25px 20px 10px 20px;
+    width: 300px; height: 300px;
         }
 .header {
     padding: 50px 0;
-    background-color: #92D9FF;
+    background-color: #BDF8D1;
     text-align: center;
     }
 .container {
@@ -35,7 +51,7 @@ a {
     width: 960px;
 }
 .page-nav {
-    background-color: #FF9B19;
+    background-color: #60D4AE;
     border-color: #101010;
     min-height: 63px;
 }
@@ -45,7 +61,7 @@ a {
 }
 .page-nav a {
     display: block;
-    color: #2529ff;
+    color: #822bae;
     line-height: 3em;
     font-weight: bold;
     text-align:center;

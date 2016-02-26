@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="images/x-icon" href="icon.ico"/>
+    <title>First page</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1>Важное название</h1>
+    </div>
+    <div class="container">
+        <h2>Менее важное название</h2>
+    </div>
+</header>
+
+<nav class="page-nav">
+    <div class="container">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<h3>Основы таблиц</h3>
+<table>
+    <caption>Удивительные животные</caption>
+    <colgroup>
+        <col style="width: 150px; border: 5px solid #aaaaaa;">
+    </colgroup>
+    <colgroup style="width: 150px; border: 5px solid #aaaaaa;">
+        <col style="width: 350px;">
+        <col style="width: 200px;">
+        <col style="width: 300px;">
+        <col style="width: 100px;">
+    </colgroup>
+    <colgroup>
+        <col style="width: 150px; border: 5px solid #aaaaaa;">
+    </colgroup>
+
+    <thead>
+        <tr>
+            <th>Животное</th>
+            <th>Описание</th>
+            <th>Окрас</th>
+            <th>Характер</th>
+            <th>Жизнь</th>
+            <th>Рекомендация</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>Итого</th>
+            <td rowspan="2" colspan="4">Общая продолжительность жизни 55 лет</td>
+            <td rowspan="2">Ничего!</td>
+        </tr>
+        <tr>
+            <td>4 зверя</td>
+        </tr>
+
+    </tfoot>
+    <tbody>
+    <tr>
+        <td>Собака</td>
+        <td>Громко лает</td>
+        <td>Чёрный</td>
+        <td>Покладистый</td>
+        <td rowspan="2">15 лет</td>
+        <td rowspan="4">Держать подальше от детей</td>
+    </tr>
+    <tr>
+        <td>Кошка</td>
+        <td>Пушистый зверь</td>
+        <td>Шиншилла</td>
+        <td>Сама себе на уме</td>
+        <!--<td>15 лет</td>-->
+        <!--<td>Держать подальше от детей</td>-->
+    </tr>
+    <tr>
+        <td>Корова</td>
+        <td>Даёт молоко</td>
+        <td>Пятнистый</td>
+        <td>Покорный</td>
+        <td rowspan="2">10 лет</td>
+        <!--<td>Держать подальше от детей</td>-->
+    </tr>
+    <tr>
+        <td>Свинья</td>
+        <td>Громко визжит</td>
+        <td colspan="2">Розовый</td>
+        <!--<td>Розовый</td> colspan - горизонтальное обьединение-->
+        <!--<td>10 лет</td>rowspan - вертикальное обьединение-->
+        <!--<td>Держать подальше от детей</td>-->
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+
