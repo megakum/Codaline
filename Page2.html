@@ -20,12 +20,12 @@
     <div class="container">
         <ul>
             <li><a href="Index.html">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Table</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
 </nav>
-<h3>Основы таблиц</h3>
+<h3>Работа с таблицами</h3>
 <table>
     <caption>Удивительные животные</caption>
     <colgroup>
@@ -54,7 +54,7 @@
     <tfoot>
         <tr>
             <th>Итого</th>
-            <td rowspan="2" colspan="4">Общая продолжительность жизни 55 лет</td>
+            <td rowspan="2" colspan="4" style="text-align: right">Общая продолжительность жизни 55 лет</td>
             <td rowspan="2">Ничего!</td>
         </tr>
         <tr>
@@ -97,6 +97,91 @@
     </tr>
     </tbody>
 </table>
+
+<h3>Формы на сайте</h3>
+<form action="#" name="MyForm" enctype="application/x-www-form-urlencoded"
+method="post"  autocomplete="off">
+    <fieldset>
+    <legend>Контактные данные</legend>
+    <p>
+        <label for="name">Укажите имя</label>
+        <input id="name" type="text" placeholder="Ваше имя" required autofocus>
+    </p>
+    <p>
+        <label for="mail">Укажите e-mail</label>
+        <input id="mail" type="email" placeholder="Ваш e-mail" required>
+    </p>
+    <p>
+        <label for="phone">Укажите телефон</label>
+        <input id="phone" type="tel" placeholder="Ваш телефон" maxlength="13">
+    </p>
+    <p>
+        <label for="web">Укажите свой сайт</label>
+        <input id="web" type="url" placeholder="Ваш сайт если есть">
+    </p>
+    <p>
+        <label for="city">Укажите свой город</label>
+        <select name="city" id="city">
+            <option value="city1">Киев</option>
+            <option value="city2">Черкассы</option>
+            <option value="city3">Харьков</option>
+            <option value="city3">Херсон</option>
+            <option value="city3">Запорожье</option>
+
+        </select>
+    </p>
+    </fieldset>
+    <fieldset>
+        <legend>Личные данные</legend>
+    <p>
+        <label for="eye">Цвет ваших глаз</label>
+        <input id="eye" type="color" name="eye" value="#4A5217">
+    </p>
+    <p>
+        <label for="num">Ваш вес (кг)</label>
+        <input id="num" type="number" min="30" max="150">
+    </p>
+    <p>
+        <label for="rost">Ваш рост (см)</label>
+        <input oninput="out.value=(rost.value)" id="rost" type="range" min="130" max="200" value="160">
+        <br><br>
+        <label>Ваш рост равен(см)</label>
+        <output id="out">160</output>
+    </p>
+
+    <p>
+        <label for="pol">Укажите ваш пол</label>
+        <input id="pol" type="radio" name="pol" checked>Мужской
+        <input type="radio" name="pol">Женский
+    </p>
+    <p>
+        <label for="dr">Укажите вашу дату рождения</label>
+        <input id="dr" type="date" name="dr" checked>
+    </p>
+    </fieldset>
+    <p>
+        <label for="news">Получать письма по темам</label>
+        <input id="news" type="checkbox" checked>Все
+        <input type="checkbox">Бизнес
+        <input type="checkbox">Здоровье
+    </p>
+    <p>
+        <label for="pass">Введите пароль</label>
+        <input id="pass" type="password" placeholder="Ваш пароль" required>
+    </p>
+
+    <p>
+        <label for="text">Сообщение:</label>
+        <textarea name="text" id="text" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+    </p>
+    <p>
+        <input type="reset" value="Очистить" >
+    </p>
+    <p>
+        <input type="submit" value="Кнопка" >
+    </p>
+</form>
+
 </body>
 </html>
 

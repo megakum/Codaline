@@ -5,10 +5,6 @@ body {
     font-family: sans-serif;
     }
 
-p {
-    text-indent: 30px;
-
-    }
 ul {
     margin: 0;
     padding: 0;
@@ -35,6 +31,27 @@ tfoot {
     background: #ffda9e;
     border: 5px solid #aaaaaa;
 }
+label {
+    font-size: 80%;
+    width: 150px;
+    display: inline-block;
+    cursor: pointer;
+}
+form {
+    width: 500px;
+    margin: 20px auto;
+}
+fieldset {
+    border: 3px double #aaaaaa;
+    border-radius: 3px;
+    margin: 20px 0;
+    padding: 20px;
+}
+legend {
+    background-color: aquamarine;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
 
 .left {
     float: left;
@@ -42,7 +59,7 @@ tfoot {
     width: 300px; height: 300px;
         }
 .header {
-    padding: 50px 0;
+    padding: 1px 0;
     background-color: #BDF8D1;
     text-align: center;
     }
