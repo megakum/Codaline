@@ -4,17 +4,14 @@ body {
     font-size: 20px;
     font-family: sans-serif;
     }
+header {
+    /*margin: 0;*/
+    height: 150px;
+}
+nav {
+    /*margin: 0px;*/
+}
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-ul li {
-    list-style-type: none;
-}
-a {
-    text-decoration: none;
-}
 th, td {
     border: 1px solid #aaaaaa;
     padding: 5px 10px;
@@ -39,7 +36,7 @@ label {
 }
 form {
     width: 500px;
-    margin: 20px auto;
+    margin: 20px 0;
 }
 fieldset {
     border: 3px double #aaaaaa;
@@ -56,33 +53,33 @@ legend {
 .left {
     float: left;
     margin: 25px 20px 10px 20px;
-    width: 300px; height: 300px;
         }
 .header {
-    padding: 1px 0;
+    padding: 1px;
+    line-height: 40px;
     background-color: #BDF8D1;
     text-align: center;
+    /*border: 1px solid black;*/
+
     }
-.container {
-    margin: 0 auto;
-    width: 960px;
-}
 .page-nav {
+    padding: 1px 60px;
     background-color: #60D4AE;
-    border-color: #101010;
-    min-height: 63px;
+    height: 70px;
+    /*border: 1px solid black;*/
 }
 .page-nav li {
-    float: left;
-    width: 100px;
-}
+    display: inline-block;
+    list-style-type: none;
+    }
 .page-nav a {
-    display: block;
+    margin-left:10px;
+    padding: 25px 20px;
     color: #822bae;
-    line-height: 3em;
+    line-height: 30px;
     font-weight: bold;
     text-align:center;
-    margin-left: 50px;
+    text-decoration: none;
 }
 .page-nav li a:hover {
     color: yellowgreen;
