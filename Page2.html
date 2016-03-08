@@ -52,14 +52,14 @@
             <th>Окрас</th>
             <th>Характер</th>
             <th>Жизнь</th>
-            <th>Рекомендация</th>
+            <th>Рекомендации</th>
         </tr>
     </thead>
     <tfoot>
         <tr>
             <th>Итого</th>
-            <td rowspan="2" colspan="4" style="text-align: right">Общая продолжительность жизни 55 лет</td>
-            <td rowspan="2">Ничего!</td>
+            <td rowspan="2" colspan="4" style="text-align: right">Общая продолжительность жизни 50 лет</td>
+            <td rowspan="2">Никаких!</td>
         </tr>
         <tr>
             <td>4 зверя</td>
@@ -121,7 +121,7 @@ method="post"  autocomplete="off">
     </p>
     <p>
         <label for="web">Укажите свой сайт</label>
-        <input id="web" type="url" placeholder="Ваш сайт если есть">
+        <input id="web" type="url" placeholder="Ваш сайт, если есть">
     </p>
     <p>
         <label for="city">Укажите свой город</label>
@@ -146,11 +146,11 @@ method="post"  autocomplete="off">
         <input id="num" type="number" min="30" max="150">
     </p>
     <p>
-        <label for="rost">Ваш рост (см)</label>
-        <input oninput="out.value=(rost.value)" id="rost" type="range" min="130" max="200" value="160">
-        <br><br>
         <label>Ваш рост равен(см)</label>
         <output id="out">160</output>
+        <br><br>
+        <label for="rost">Ваш рост (см)</label>
+        <input oninput="out.value=(rost.value)" id="rost" type="range" min="130" max="200" value="160">
     </p>
 
     <p>

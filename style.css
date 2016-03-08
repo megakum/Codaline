@@ -7,30 +7,42 @@ html, body {
 header, section, footer, aside, nav, main, article, figure {
     display: block;
 }
-header {
-    height: 150px;
-}
 
 body {
     background-color: aliceblue;
     font-size: 20px;
     font-family: sans-serif;
     }
+header {
+    padding: 1px 0;
+    height: 165px;
+    background-color: #BDF8D1;
+    text-align: center;
+    /*border: 1px solid black*/
+}
+h3 {
+    margin-left: 50px;
+}
 
 footer {
+    padding: 3px 0;
+    height: 47px;
     background-color: #BDF8D1;
-    height: 60px;
-    line-height: 60px;
     font-size: 80%;
-    text-align: right;
+    text-align: center;
+    /*border: 1px solid black;*/
 }
 
 /*Для таблиц*/
+caption {
+    padding-bottom: 10px;
+}
 th, td {
     border: 1px solid #aaaaaa;
     padding: 5px 10px;
 }
 table {
+    margin-left: 30px;
     border-collapse: collapse;
     text-align: center;
 }
@@ -52,7 +64,7 @@ label {
 }
 form {
     width: 500px;
-    margin: 20px 0;
+    margin: 20px 30px;
 }
 fieldset {
     border: 3px double #aaaaaa;
@@ -61,7 +73,7 @@ fieldset {
     padding: 20px;
 }
 legend {
-    background-color: aquamarine;
+    background-color: #dddddd;
     border-radius: 3px;
     padding: 5px 10px;
 }
@@ -70,51 +82,49 @@ legend {
     float: left;
     margin: 25px 20px 10px 20px;
         }
-.header {
-    padding: 1px;
-    line-height: 40px;
-    background-color: #BDF8D1;
-    text-align: center;
-    /*border: 1px solid black;*/
 
-    }
 .page-nav {
     padding: 1px 60px;
     background-color: #60D4AE;
     height: 70px;
     /*border: 1px solid black;*/
 }
+
 .page-nav li {
     display: inline;
     list-style-type: none;
+    /*border: 1px solid black;*/
 }
 .page-nav a {
     margin-left:10px;
-    padding: 25px 20px;
-    color: #822bae;
+    padding: 24px 20px;
+    color: #0403ae;
     line-height: 30px;
+    font-size: 110%;
     font-weight: bold;
     text-align:center;
     text-decoration: none;
+    /*border: 1px solid black*/
 }
 .page-nav li a:hover {
     color: yellowgreen;
     background-color: black;
 }
-/*Обёртка для футера*/
+
 .footer li {
-    padding: 10px;
+    padding: 10px 20px;
     display: inline;
     list-style-type: none;
     /*border: 1px solid black;*/
 }
+/*Обёртка для футера*/
 .page-wrapper {
     min-height: 100%;
-    margin-bottom: -50px;
+    margin-bottom: -40px;
     /*border: 1px solid black;*/
 }
 .page-buffer {
-        height: 50px;
+        height: 70px;
     /*border: 1px solid black;*/
 }
 
