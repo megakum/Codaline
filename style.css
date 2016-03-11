@@ -12,10 +12,10 @@ body {
     background-color: aliceblue;
     font-size: 20px;
     font-family: sans-serif;
-    }
+}
 header {
     padding: 1px 0;
-    height: 165px;
+    height: 105px;
     background-color: #BDF8D1;
     text-align: center;
     /*border: 1px solid black*/
@@ -23,10 +23,13 @@ header {
 h3 {
     margin-left: 50px;
 }
+section {
+    margin: 55px;
+    /*border: 1px solid black*/
+}
 
 footer {
-    padding: 3px 0;
-    height: 47px;
+    height: 65px;
     background-color: #BDF8D1;
     font-size: 80%;
     text-align: center;
@@ -34,54 +37,24 @@ footer {
 }
 
 /*Для таблиц*/
-caption {
-    padding-bottom: 10px;
-}
-th, td {
-    border: 1px solid #aaaaaa;
+
+td,th {
+
     padding: 5px 10px;
+
 }
 table {
     margin-left: 30px;
     border-collapse: collapse;
-    text-align: center;
-}
-thead {
-    background: #dddddd;
-    border: 5px solid #aaaaaa;
-}
-tfoot {
-    background: #ffda9e;
-    border: 5px solid #aaaaaa;
-}
 
-/*Для форм*/
-label {
+
+    text-align: left;
     font-size: 80%;
-    width: 150px;
-    display: inline-block;
-    cursor: pointer;
 }
-form {
-    width: 500px;
-    margin: 20px 30px;
-}
-fieldset {
-    border: 3px double #aaaaaa;
-    border-radius: 3px;
-    margin: 20px 0;
-    padding: 20px;
-}
-legend {
-    background-color: #dddddd;
-    border-radius: 3px;
-    padding: 5px 10px;
-}
-
 .left {
     float: left;
     margin: 25px 20px 10px 20px;
-        }
+}
 
 .page-nav {
     padding: 1px 60px;
@@ -95,7 +68,7 @@ legend {
     list-style-type: none;
     /*border: 1px solid black;*/
 }
-.page-nav a {
+.page-nav li a {
     margin-left:10px;
     padding: 24px 20px;
     color: #0403ae;
@@ -110,10 +83,22 @@ legend {
     color: yellowgreen;
     background-color: black;
 }
+.table1 {
+    line-height: 0.7em;
+}
+.table1 td,th {
+    border: 1px solid #E87B1A;
+}
+.footer ul {
+    padding-top: 15px;  /* 2 строки*/
+    /*padding-top: 26px;   !*1 строка*!*/
+    /*border: 1px solid black;*/
+}
 
-.footer li {
-    padding: 10px 20px;
-    display: inline;
+.footer ul li {
+    margin-right: 40px;  /* 2 строки*/
+    /*padding: 10px 20px;  !*1 строка*!*/
+    /*display: inline;  !*1 строка*!*/
     list-style-type: none;
     /*border: 1px solid black;*/
 }
@@ -124,7 +109,7 @@ legend {
     /*border: 1px solid black;*/
 }
 .page-buffer {
-        height: 70px;
+    height: 70px;
     /*border: 1px solid black;*/
 }
 
