@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -7,184 +7,145 @@
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>First page</title>
+    <title>Моя страница</title>
 </head>
 <body>
 <div class="page-wrapper">
 <header class="header">
     <div class="container">
-        <h1>Важное название</h1>
+        <h1>Резюме</h1>
     </div>
-    <div class="container">
-        <h2>Менее важное название</h2>
-    </div>
+
 </header>
 
 <nav class="page-nav">
     <div class="container">
         <ul>
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="#">Table</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="Index.html">Главная</a></li>
+            <li><a href="#">Резюме</a></li>
+            <li><a href="Page3.html">Языки программирования</a></li>
+            <li><a href="Page4.html">Теги</a></li>
         </ul>
     </div>
 </nav>
-<h3>Работа с таблицами</h3>
-<table>
-    <caption>Удивительные животные</caption>
-    <colgroup>
-        <col style="width: 150px; border: 5px solid #aaaaaa;">
-    </colgroup>
-    <colgroup style="width: 150px; border: 5px solid #aaaaaa;">
-        <col style="width: 350px;">
-        <col style="width: 200px;">
-        <col style="width: 300px;">
-        <col style="width: 100px;">
-    </colgroup>
-    <colgroup>
-        <col style="width: 150px; border: 5px solid #aaaaaa;">
-    </colgroup>
-
-    <thead>
+    <figure class="left">
+        <img src="Images/foto.jpg" alt="image" width="300px" height="300px"
+             title="Моя фотогафия" >
+        <!--<figcaption>Моя фотография</figcaption>-->
+    </figure>
+    <section>
+<h3>Рева Сергей</h3>
+    <hr color="#E87B1A" width="300" align="left" size="2">
+    <table style="border: none">
         <tr>
-            <th>Животное</th>
-            <th>Описание</th>
-            <th>Окрас</th>
-            <th>Характер</th>
-            <th>Жизнь</th>
-            <th>Рекомендации</th>
-        </tr>
-    </thead>
-    <tfoot>
-        <tr>
-            <th>Итого</th>
-            <td rowspan="2" colspan="4" style="text-align: right">Общая продолжительность жизни 50 лет</td>
-            <td rowspan="2">Никаких!</td>
+            <td>Дата рождения</td>
+            <td>5 октября 1970</td>
         </tr>
         <tr>
-            <td>4 зверя</td>
+            <td>Регион</td>
+            <td>Черкассы</td>
+        </tr>
+        <tr>
+            <td>Телефон</td>
+            <td>(067)897-65-64</td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td><a href="mailto:revasergey70@gmail.com">revasergey70@gmail.com
+            </a></td>
         </tr>
 
-    </tfoot>
-    <tbody>
-    <tr>
-        <td>Собака</td>
-        <td>Громко лает</td>
-        <td>Чёрный</td>
-        <td>Покладистый</td>
-        <td rowspan="2">15 лет</td>
-        <td rowspan="4">Держать подальше от детей</td>
-    </tr>
-    <tr>
-        <td>Кошка</td>
-        <td>Пушистый зверь</td>
-        <td>Шиншилла</td>
-        <td>Сама себе на уме</td>
-        <!--<td>15 лет</td>-->
-        <!--<td>Держать подальше от детей</td>-->
-    </tr>
-    <tr>
-        <td>Корова</td>
-        <td>Даёт молоко</td>
-        <td>Пятнистый</td>
-        <td>Покорный</td>
-        <td rowspan="2">10 лет</td>
-        <!--<td>Держать подальше от детей</td>-->
-    </tr>
-    <tr>
-        <td>Свинья</td>
-        <td>Громко визжит</td>
-        <td colspan="2">Розовый</td>
-        <!--<td>Розовый</td> colspan - горизонтальное обьединение-->
-        <!--<td>10 лет</td>rowspan - вертикальное обьединение-->
-        <!--<td>Держать подальше от детей</td>-->
-    </tr>
-    </tbody>
-</table>
+    </table>
+    <hr color="#E87B1A" width="400" align="left" size="2">
+    <h3>Junior Front-end developer </h3>
+    </section>
+    <table class="table1">
+        <colgroup>
+        <col style="background-color: #dae3f4">
+        </colgroup>
+       <tr>
+           <th height="50">Цель</th>
+           <td height="50">Найти применение своим начальным знаниям в области веб-программирования</td>
+       </tr>
+        <tr>
+            <th height="50">Навыки</th>
+            <td height="50">Базовые знания HTML, CSS, JavaScript</td>
+        </tr>
+        <tr>
+            <th>Опыт работы</th>
+            <td>
+                <ul>
+                    <li>
+                            <p>Редактор видеоархива</p>
+                            <p>август 2013 - май 2015 (1год 10 мес)</p>
+                            <p>TBi, Телеканал</p>
+                            <p>от 100 до 250 сотрудников  Медиа / СМИ</p>
+                            <p>Систематизация архива видеоматериалов канала, выдача материала журналистам для работы с ним (подготовка к выпуску новостей и программ).</p>
 
-<h3>Формы на сайте</h3>
-<form action="#" name="MyForm" enctype="application/x-www-form-urlencoded"
-method="post"  autocomplete="off">
-    <fieldset>
-    <legend>Контактные данные</legend>
-    <p>
-        <label for="name">Укажите имя</label>
-        <input id="name" type="text" placeholder="Ваше имя" required autofocus>
-    </p>
-    <p>
-        <label for="mail">Укажите e-mail</label>
-        <input id="mail" type="email" placeholder="Ваш e-mail" required>
-    </p>
-    <p>
-        <label for="phone">Укажите телефон</label>
-        <input id="phone" type="tel" placeholder="Ваш телефон" maxlength="13">
-    </p>
-    <p>
-        <label for="web">Укажите свой сайт</label>
-        <input id="web" type="url" placeholder="Ваш сайт, если есть">
-    </p>
-    <p>
-        <label for="city">Укажите свой город</label>
-        <select name="city" id="city">
-            <option value="city1">Киев</option>
-            <option value="city2">Черкассы</option>
-            <option value="city3">Харьков</option>
-            <option value="city4">Херсон</option>
-            <option value="city5">Запорожье</option>
+                    </li>
+                    <br>
+                    <li>
+                        <p>Главный механик</p>
+                        <p>январь 2012 - январь 2013 (1 год 1 мес)</p>
+                        <p>Каневские Нивы</p>
+                        <p>от 50 до 100 сотрудников  АПК (Агропромышленный комплекс)</p>
+                        <p>Закупка запчастей к с\х технике(Т-150, К700,ЮМЗ, МТЗ) и автомобилям(ГАЗ, ЗИЛ, Камаз), семян, удобрений и средств защиты растений.</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>Менеджер по закупкам с/х продукции</p>
+                        <p>сентябрь 2010 - декабрь 2012 (2 года 4 мес)</p>
+                        <p>Агротайм</p>
+                        <p>до 20 сотрудников  АПК (Агропромышленный комплекс)</p>
+                        <p>Командировки по Западной Украине с целью закупки зерновых с их последующей перепродажей.</p>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>Образование</th>
+            <td><p>Черкасский инженерно-технологический институт</p>
+                <p>Год окончания 1992</p>
+                <p>Инженер-механик по специальности "Технология машиностроения" специалист</p>
+            </td>
+        </tr>
+        <tr>
+            <th height="50">Владение иностранными языками</th>
+            <td height="50">Английский - elementary</td>
+        </tr>
+        <tr>
+            <th>Курсы,тренинги</th>
+            <td>
+                <ul>
+                    <li>
+                    <p><a href="http://www.prometheus.org.ua">prometheus.org.ua</a></p>
+                    <p>Год окончания 2016</p>
+                    <p>Основы WEB UI, получил базовые знания по HTML, CSS, JavaScript</p>
+                    </li>
+                    <br>
+                    <li>
+                    <p><a href="http://www.codaline.me">codaline.me</a></p>
+                    <p>Обучение в процессе</p>
+                    <p></p>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th> Дополнительная информация</th>
+            <td>
+                <p>Компьютерные навыки</p>
+                <p>Уверенный пользователь</p>
+                <br>
+                <p>Водительское удостоверение</p>
+                <p>Категории В,С опыт вождения - более 20 лет</p>
+                <br>
+                <p>Увлечения и интересы</p>
+                <p>Фитнес, бильярд</p>
+            </td>
+        </tr>
 
-        </select>
-    </p>
-    </fieldset>
-    <fieldset>
-        <legend>Личные данные</legend>
-    <p>
-        <label for="eye">Цвет ваших глаз</label>
-        <input id="eye" type="color" name="eye" value="#4A5217">
-    </p>
-    <p>
-        <label for="num">Ваш вес (кг)</label>
-        <input id="num" type="number" min="30" max="150">
-    </p>
-    <p>
-        <label>Ваш рост равен(см)</label>
-        <output id="out">160</output>
-        <br><br>
-        <label for="rost">Ваш рост (см)</label>
-        <input oninput="out.value=(rost.value)" id="rost" type="range" min="130" max="200" value="160">
-    </p>
-
-    <p>
-        <label for="pol">Укажите ваш пол</label>
-        <input id="pol" type="radio" name="pol" checked>Мужской
-        <input type="radio" name="pol">Женский
-    </p>
-    <p>
-        <label for="dr">Укажите вашу дату рождения</label>
-        <input id="dr" type="date" name="dr" checked>
-    </p>
-    </fieldset>
-    <p>
-        <label for="news">Получать письма по темам</label>
-        <input id="news" type="checkbox" checked>Все
-        <input type="checkbox">Бизнес
-        <input type="checkbox">Здоровье
-    </p>
-    <p>
-        <label for="pass">Введите пароль</label>
-        <input id="pass" type="password" placeholder="Ваш пароль" required>
-    </p>
-
-    <p>
-        <label for="text">Сообщение:</label>
-        <textarea name="text" id="text" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
-    </p>
-    <p>
-        <input type="reset" value="Очистить" >
-    </p>
-    <p>
-        <input type="submit" value="Кнопка" >
-    </p>
-</form>
+    </table>
 
 </div>
 <div class="page-buffer"></div>
@@ -192,8 +153,8 @@ method="post"  autocomplete="off">
 <footer class="footer">
     <ul>
         <li>&copy; 2016 Mega Company. All rights reserved.</li>
-        <li>Contact information: <a href="mailto:someone@example.com">
-            someone@example.com</a>.</li>
+        <li>Contact information: <a href="mailto:revasergey70@gmail.com">
+            revasergey70@gmail.com</a>.</li>
     </ul>
 
 </footer>
