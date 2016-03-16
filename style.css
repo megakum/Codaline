@@ -74,6 +74,9 @@ table {
     text-align: left;
     font-size: 80%;
 }
+.container {
+    margin-top: 70px;
+}
 .content {
     width: 80%;
     margin: 10px auto;
@@ -145,6 +148,10 @@ table {
 }
 
 .page-nav {
+
+    position: fixed;
+    top: 0;left: 0;right: 0;
+
     padding: 1px 60px;
     background-color: #60D4AE;
     height: 70px;
