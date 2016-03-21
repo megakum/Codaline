@@ -1,30 +1,28 @@
+@import "fonts/arimo.css";
+/*
+    Arimo, 400, 400 italic, 700, 700 italic
+*/
+@import "fonts/clinicapro.css";
+/*
+    Clinica Pro, 400, 400 italic
+*/
+@import "fonts/ubuntu.css";
+/*
+    Ubuntu, 300, 300 italic, 400, 400 italic, 500, 500 italic, 700, 700 italic
+*/
+@import "fonts/robotomono.css";
+/*
+    Roboto Mono, 100, 100 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 700, 700 italic
+*/
+@import "fonts/pancettapro.css";
+/*
+    Pancetta Pro, 400, 400 italic
+*/
 /*Общий стиль*/
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-}
-* {
-@import "fonts/arimo.css";
-    /*
-        Arimo, 400, 400 italic, 700, 700 italic
-    */
-@import "fonts/clinicapro.css";
-    /*
-        Clinica Pro, 400, 400 italic
-    */
-@import "fonts/ubuntu.css";
-    /*
-        Ubuntu, 300, 300 italic, 400, 400 italic, 500, 500 italic, 700, 700 italic
-    */
-@import "fonts/robotomono.css";
-    /*
-        Roboto Mono, 100, 100 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 700, 700 italic
-    */
-@import "fonts/pancettapro.css";
-    /*
-        Pancetta Pro, 400, 400 italic
-    */
 }
 
 header, section, footer, aside, nav, main, article, figure {
@@ -40,14 +38,16 @@ header {
     height: 105px;
     background-color: #BDF8D1;
     text-align: center;
-    font-family: "Clinica Pro";
+    font-family: "Pancetta Pro";
     /*border: 1px solid black*/
-}
-h3 {
-    margin-left: 50px;
 }
 h2 {
     text-align: center;
+}
+h1 {
+    margin: 0;
+    height: 105px;
+    line-height: 105px;
 }
 section {
     margin-top: 55px;
@@ -93,10 +93,7 @@ table {
     padding-top: 65px
     /*border: 1px solid black*/
 }
-.img1 {
-    /*margin: 40px;*/
-    /*border: 1px solid black*/
-}
+
 .div2 {
     padding-top:45px;
     padding-left: 260px;
@@ -108,7 +105,6 @@ table {
 }
 .img12 {
     padding-left: 15px;
-    padding-bottom: -10px;
     margin-bottom: -10px;
 }
 .div3 {
@@ -148,10 +144,8 @@ table {
 }
 
 .page-nav {
-
     position: fixed;
     top: 0;left: 0;right: 0;
-
     padding: 1px 60px;
     background-color: #60D4AE;
     height: 70px;
@@ -161,6 +155,7 @@ table {
 .page-nav ul li {
     display: inline;
     list-style-type: none;
+    width: 100%;
     /*border: 1px solid black;*/
 }
 .page-nav ul li a {
@@ -191,8 +186,8 @@ table {
     margin: 10px auto;
 }
 .page4 h3 {
-    padding-left: 500px;
     margin-top: 50px;
+    text-align: center;
     /*border: 1px solid black*/
 }
 .table2 {
@@ -200,10 +195,8 @@ table {
     border-collapse: collapse;
     text-align: left;
     font-size: 80%;
-    margin-top: -18px;
-
+    margin-top: 5px;
 }
-
 .table2 td,th {
     border: 1px solid #E87B1A;
 }
@@ -233,5 +226,15 @@ table {
 .page-buffer {
     height: 60px;
     /*border: 1px solid black;*/
+}
+/*Адаптивная верстка*/
+@media (max-width: 920px){
+    .container {margin-top: 160px;}
+    .page-nav ul li a {margin: 0;padding: 0;}
+    .page-nav ul li {display: block;}
+    .page-nav {height: 160px;}
+    .page4 img {margin-top: 150px;}
+    div figure img {margin-top: 50px;}
+
 }
 
