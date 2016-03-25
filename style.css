@@ -38,7 +38,7 @@ header {
     height: 105px;
     background-color: #BDF8D1;
     text-align: center;
-    font-family: "Pancetta Pro";
+    font-family: "Pancetta Pro",sans-serif;
     /*border: 1px solid black*/
 }
 h2 {
@@ -74,6 +74,12 @@ table {
     text-align: left;
     font-size: 80%;
 }
+/*Поведение при выделении текста на странице*/
+::selection{
+    color: yellow;
+    background: blue;
+}
+
 .container {
     margin-top: 70px;
 }
@@ -151,28 +157,42 @@ table {
     height: 70px;
     /*border: 1px solid black;*/
 }
-
+.page-nav ul{
+    margin-left: 80px;
+}
 .page-nav ul li {
+    margin-left:-6px;
     display: inline;
     list-style-type: none;
     width: 100%;
     /*border: 1px solid black;*/
 }
 .page-nav ul li a {
-    margin-left:10px;
+    margin-left:-6px;
     padding: 24px 20px;
     color: #0403ae;
     line-height: 30px;
     font-weight: bold;
-    font-family:"Clinica Pro";
+    font-family:"Clinica Pro",sans-serif;
     text-align:center;
     text-decoration: none;
     /*border: 1px solid black*/
 }
-.page-nav li a:hover {
+/*Подсветка фона активной ссылки*/
+.page-nav li a.active {
+    background-color: #00C097;
+}
+/*Подсветка фона ссылки при наведении (кроме активной)*/
+.page-nav li a:hover:not(.active) {
     color: yellowgreen;
     background-color: black;
 }
+/*Подсветка фона ссылки в момент нажатия на неё*/
+.page-nav li a:active {
+    color: #cd1228;
+    background-color: white;
+}
+
 .table1 {
     line-height: 0.7em;
     margin-top: 65px;
@@ -200,10 +220,19 @@ table {
 .table2 td,th {
     border: 1px solid #E87B1A;
 }
+/*Таблица-зебра*/
+.table2 tr:nth-child(even) {
+    background-color: #ede2e2
+}
+/*Изменяет цвет строки при наведении*/
+.table2 tr:hover {
+    background-color: #7df5b8;
+    zoom: 110%;
+}
+
 .table2 th {
     background-color: #dae3f4;
 }
-
 .footer ul {
     padding-top: 15px;  /* 2 строки*/
     /*padding-top: 26px;   !*1 строка*!*/
