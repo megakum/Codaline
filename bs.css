@@ -1,0 +1,61 @@
+@import "bootstrap/css/bootstrap.css";
+@import "bootstrap/css/bootstrap-theme.css";
+@import "bootstrap/css/font-awesome.css";
+
+.container1 {
+    width: 100%;
+    margin: 70px 0 0 0;
+    padding: 0;
+}
+.page-nav {
+    padding:0 60px!important;
+}
+.page-nav ul li {
+    line-height: 65px;
+}
+.img-thumbnail{ box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /*Тень для всех фото*/}
+
+/*Для форм входа на малых экранах*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar-form, .form-control{
+        width: 280px !important;
+        float: left!important;
+    }
+    .form-control{margin-bottom: 4px;}
+}
+.nav-tabs{
+    margin-bottom: 15px;
+}
+/*Меняем в цепочной навигацци "/" на >*/
+.breadcrumb > li + li:before {
+    content: "\f105";
+    font-family: 'FontAwesome',sans-serif;
+}
+
+
+
+/*Адаптивность сетки masonry*/
+@media screen and (max-width: 767px) {
+    .masonry[data-columns]::before {
+        content: '1 .col-xs-12';
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .masonry[data-columns]::before {
+        content: '2 .col-xs-6';
+    }
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .masonry[data-columns]::before {
+        content: '3 .col-xs-4';
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .masonry[data-columns]::before {
+        content: '3 .col-xs-4';
+    }
+
+}

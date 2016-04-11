@@ -46,11 +46,10 @@ h2 {
 }
 h1 {
     margin: 0;
-    height: 105px;
     line-height: 105px;
 }
 section {
-    margin-top: 55px;
+    margin-top: 35px;
     padding-top: 1px;
 
     /*border: 1px solid black*/
@@ -74,6 +73,16 @@ table {
     text-align: left;
     font-size: 80%;
 }
+/*Тень названий языков*/
+dt,.title {
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.dt {padding-left: 40px;}
+dd{
+    text-align: justify;
+}
+
 /*Поведение при выделении текста на странице*/
 ::selection{
     color: yellow;
@@ -119,11 +128,19 @@ table {
     /*border: 1px solid black*/
 }
 .img3 {
-    padding-left: 15px;
     padding-bottom: 5px;
+
 }
 .img3 img {
     border-radius: 40px;
+    margin-left: 30px;
+}
+.img4 img {
+    border-radius: 40px;
+
+}
+.image p{
+    text-align: center;
 }
 .div4 {
     line-height: 1.4em;
@@ -142,7 +159,19 @@ table {
 }
 .left {
     float: left;
-    margin: 20px 20px 10px 20px;
+    margin: 0 20px 10px 20px;
+
+}
+img[title="Моя фотогафия"]{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
 }
 .left2 {
     float: left;
@@ -151,8 +180,9 @@ table {
 
 .page-nav {
     position: fixed;
+    z-index: 1;
     top: 0;left: 0;right: 0;
-    padding: 1px 60px;
+    padding: 0 60px;
     background-color: #60D4AE;
     height: 70px;
     /*border: 1px solid black;*/
@@ -168,14 +198,19 @@ table {
     /*border: 1px solid black;*/
 }
 .page-nav ul li a {
-    margin-left:-6px;
-    padding: 24px 20px;
+    padding: 26px 20px;
     color: #0403ae;
     line-height: 30px;
     font-weight: bold;
+    font-size:80%;
     font-family:"Clinica Pro",sans-serif;
     text-align:center;
+    text-transform: uppercase;
     text-decoration: none;
+    /*Для плавности переходов в меню*/
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    transition: .4s;
     /*border: 1px solid black*/
 }
 /*Подсветка фона активной ссылки*/
@@ -205,9 +240,12 @@ table {
     width: 80%;
     margin: 10px auto;
 }
+/*Тень названия таблицы*/
 .page4 h3 {
     margin-top: 50px;
     text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     /*border: 1px solid black*/
 }
 .table2 {
@@ -257,13 +295,61 @@ table {
     /*border: 1px solid black;*/
 }
 /*Адаптивная верстка*/
-@media (max-width: 920px){
+img{
+    max-width: 100%;
+
+}
+
+@media (max-width: 1050px){
     .container {margin-top: 160px;}
     .page-nav ul li a {margin: 0;padding: 0;}
-    .page-nav ul li {display: block;}
+    .page-nav ul li {display: block;
+     line-height: 30px;}
     .page-nav {height: 160px;}
     .page4 img {margin-top: 150px;}
     div figure img {margin-top: 50px;}
+    .div4 p,dd,div.description {font-size: 80%;}
+    ul{margin-top: 1px;}
+}
+/*@media screen and (min-width:921px) and (max-width:1050px) {*/
+    /*ul{margin-top: 5px;}*/
+    /*.page-nav ul li {display: block;}*/
+/*}*/
+@media screen and (max-width:500px) {
+    .page-nav {
+        height: 200px;
+
+    }
+    .container {margin-top: 200px;}
+    .page-nav ul{
+        padding-top: 10px;
+        margin-left: 35px;
+    }
+}
+
+/*Абсолютное и относительное позиционирование*/
+.language{
+    position: relative;
+    padding: 1px; /*Чтобы не схлопывались отступы вложенных дивов*/
+    margin: 0 auto;
+    min-height: 250px;
+    margin-top: 130px;
+    /*margin-bottom: 40px;!*Просто чтобы отодвинуть от нижнего края при верстке нижних блоков*!*/
+    /*border: 1px solid #e5e5e5;*/
 
 }
+.image img{
+    position: absolute;
+    left: 35px;
+    top: 63px;
+    border-radius: 40px;
+}
+.title{
+    margin-left: 290px;
+    margin-top: 6%;
+}
+.description{
+    margin-left: 290px;
+}
+
 

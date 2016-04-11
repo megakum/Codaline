@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="images/x-icon" href="icon.ico"/>
     <!--[if lt IE 9]>
@@ -15,10 +17,11 @@
     <nav class="page-nav">
 
             <ul>
-                <li><a href="Index.html">Главная</a></li>
-                <li><a href="Page2.html">Резюме</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="page2.html">Резюме</a></li>
                 <li><a class="active" href="#">Языки программирования</a></li>
-                <li><a href="Page4.html">HTML теги</a></li>
+                <li><a href="page4.html">HTML теги</a></li>
+                <li><a href="page5.html">Bootstrap</a></li>
             </ul>
 
     </nav>
@@ -30,7 +33,7 @@
 
     <div class="content">
     <figure class= "img1">
-        <img src="Images/html.png" alt="HTML" title="HTML" style="float: left">
+        <img src="images/html.png" alt="HTML" title="HTML" style="float: left">
     </figure>
     <div class="div1">
     <dl>
@@ -39,7 +42,7 @@
     </dl>
     </div>
     <figure class= "img12">
-        <img src="Images/css.png" alt="CSS" title="CSS" style="float: right">
+        <img src="images/css.png" alt="CSS" title="CSS" style="float: right">
     </figure>
     <div class="div12">
         <dl>
@@ -48,7 +51,7 @@
         </dl>
     </div>
     <figure class= "img1">
-        <img src="Images/js.png" alt="JavaScript" title="JavaScript" style="float: left">
+        <img src="images/js.png" alt="JavaScript" title="JavaScript" style="float: left">
     </figure>
     <div class="div1">
         <dl>
@@ -58,7 +61,7 @@
     </div>
     <h2>Хочу изучить следующие языки:</h2>
     <figure class= "img1">
-        <img src="Images/php.png" alt="PHP" title="PHP" style="float: right">
+        <img src="images/php.png" alt="PHP" title="PHP" style="float: right">
     </figure>
     <div class="div1">
         <dl>
@@ -67,16 +70,16 @@
         </dl>
     </div>
     <figure class= "img12">
-        <img src="Images/sql.png" alt="SQL" title="SQL" width="230" style="float: left">
+        <img src="images/sql.png" alt="SQL" title="SQL" width="230" style="float: left">
     </figure>
     <div class="div2">
         <dl>
-            <dt><b>SQL</b></dt>
+            <dt class="dt"><b>SQL</b></dt>
             <dd> Это  формальный непроцедурный язык программирования, применяемый для создания, модификации и управления данными в произвольной реляционной базе данных, управляемой соответствующей системой управления базами данных (СУБД). SQL основывается на исчислении кортежей. </dd>
         </dl>
     </div>
         <figure class= "img12">
-            <img src="Images/java.png" alt="Java" title="Java" width="265" style="float: right">
+            <img src="images/java.png" alt="Java" title="Java" width="265" style="float: right">
         </figure>
         <div class="div13">
             <dl>
@@ -87,17 +90,17 @@
     <br>
     <h2>А также фреймворки и библиотеки :</h2>
     <figure class= "img1">
-        <img src="Images/boot.png" alt="Bootstrap" title="Bootstrap" width="230" style="float: left">
+        <img src="images/boot.png" alt="Bootstrap" title="Bootstrap" width="230" style="float: left">
     </figure>
     <div class="div2">
         <dl>
-            <dt><b>Bootstrap</b></dt>
+            <dt class="dt"><b>Bootstrap</b></dt>
             <dd> Это свободный набор инструментов для создания сайтов и веб-приложений. Включает в себя HTML и CSS шаблоны оформления для типографики, веб-форм, кнопок, меток, блоков навигации и прочих компонентов веб-интерфейса, включая JavaScript-расширения. Bootstrap использует самые современные наработки в области CSS и HTML </dd>
         </dl>
     </div>
     <br>
     <figure class= "img3">
-        <img src="Images/angular.jpg" alt="Angular JS" title="Angular JS" width="230" style="float: right">
+        <img src="images/angular.jpg" alt="Angular JS" title="Angular JS" width="230" style="float: right">
     </figure>
     <div class="div1">
         <dl>
@@ -105,15 +108,25 @@
             <dd> Это JavaScript-фреймворк с открытым исходным кодом. Предназначен для разработки одностраничных приложений. Его цель — расширение браузерных приложений на основе MVC шаблона, а также упрощение тестирования и разработки. </dd>
         </dl>
     </div>
-    <figure class= "img3">
-        <img src="Images/jquery.jpg" alt="jQuery" title="jQuery" width="230" style="float: left">
+    <figure class= "img4">
+        <img src="images/jquery.jpg" alt="jQuery" title="jQuery" width="230" style="float: left">
     </figure>
     <div class="div3">
         <dl>
-            <dt><b>jQuery</b></dt>
+            <dt class="dt"><b>jQuery</b></dt>
             <dd> Это  библиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML. Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими. </dd>
         </dl>
     </div>
+
+        <!--Абсолютное и относительное позиционирование-->
+    <div class="language">
+        <div class="image"><img src="images/jquery.jpg" alt="jQuery" title="jQuery" width="230">
+        <p>Абсолютное и относительное позиционирование</p>
+        </div>
+        <div class="title"><b>jQuery</b></div>
+        <div class="description">Это  библиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML. Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими.</div>
+    </div>
+
 
 </div>
 </div>
