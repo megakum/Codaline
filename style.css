@@ -73,7 +73,7 @@ table {
     text-align: left;
     font-size: 80%;
 }
-<<<<<<< HEAD
+
 /*Тень названий языков*/
 dt,.title {
     color: white;
@@ -84,8 +84,6 @@ dd{
     text-align: justify;
 }
 
-=======
->>>>>>> origin/master
 /*Поведение при выделении текста на странице*/
 ::selection{
     color: yellow;
@@ -201,19 +199,13 @@ img[title="Моя фотогафия"]{
     /*border: 1px solid black;*/
 }
 .page-nav ul li a {
-<<<<<<< HEAD
+
     padding: 26px 20px;
     color: #0403ae;
     line-height: 30px;
     font-weight: bold;
     font-size:80%;
-=======
-    margin-left:-6px;
-    padding: 24px 20px;
-    color: #0403ae;
-    line-height: 30px;
-    font-weight: bold;
->>>>>>> origin/master
+
     font-family:"Clinica Pro",sans-serif;
     text-align:center;
     text-transform: uppercase;
